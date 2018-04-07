@@ -11,7 +11,7 @@ public class AddFixedHeadersInterceptor implements Interceptor {
 
     public AddFixedHeadersInterceptor(String... headerAndValues) {
         if (headerAndValues.length % 2 != 0) {
-            throw new IllegalArgumentException("header must have value");
+            throw new IllegalArgumentException("Header must have value");
         }
         this.headerAndValues = headerAndValues;
     }

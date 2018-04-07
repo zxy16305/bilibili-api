@@ -12,7 +12,7 @@ public class AddFixedParamsInterceptor implements Interceptor {
 
     public AddFixedParamsInterceptor(String... paramAndValues) {
         if (paramAndValues.length % 2 != 0) {
-            throw new IllegalArgumentException("param must have value");
+            throw new IllegalArgumentException("Parameter must have value");
         }
         this.paramAndValues = paramAndValues;
     }
